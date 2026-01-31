@@ -9,3 +9,10 @@
   padding-top: 1rem;
 }
 
+.my-link:hover{
+  color: aqua !important;
+  transform: scale(1.3);
+}
+
+
+

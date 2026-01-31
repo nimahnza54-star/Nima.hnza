@@ -1,16 +1,74 @@
-# React + Vite
+# NetChi | پلتفرم خدمات کافی‌نت
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔹 معرفی پروژه
+NetChi یک پلتفرم آنلاین خدمات کافی‌نت است که به کاربران امکان می‌دهد سریع و ساده به خدمات پرینت، اسکن و کپی دسترسی داشته باشند.  
+این پروژه کاملاً **Frontend با React و Bootstrap** ساخته شده و **Decoupled** است (بدون Backend واقعی).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 هدف پروژه
+- UX روان و ساده  
+- کدنویسی تمیز و قابل توسعه  
+- رعایت اصول **SOLID** و **DRY**  
+- طراحی ریسپانسیو برای موبایل، تبلت و دسکتاپ  
+- ساخت **MVP قابل دفاع در مصاحبه**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧱 ساختار پروژه
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├─ components/
+│ ├─ Header.jsx
+│ ├─ Footer.jsx
+│ ├─ ServiceCard.jsx
+├─ pages/
+│ ├─ Home.jsx
+│ ├─ About.jsx
+│ ├─ Services.jsx
+│ ├─ Login.jsx
+├─ styles/
+│ ├─ index.css
+│ └─ app.css
+├─ App.jsx
+└─ main.jsx
+index.html
+
+
+
+
+---
+
+## 📄 صفحات (MVP)
+- **Home**: صفحه اصلی + نمونه خدمات  
+- **Services**: ویترین خدمات + جستجوی پیشرفته + فیلتر دسته‌بندی  
+- **About**: معرفی پلتفرم و مزایا  
+- **Login**: فرم ورود / ثبت‌نام (UI فقط)  
+- **Footer**: اطلاعات تماس و لینک‌های مفید  
+
+---
+
+## ⚙️ ویژگی‌های فنی
+- **Responsive کامل**: موبایل، تبلت، دسکتاپ (Bootstrap Grid & Utilities)  
+- **جستجوی پیشرفته Services**: بر اساس نام خدمات + فیلتر دسته‌بندی با useState و filter  
+- **کامپوننت‌های جداگانه**: ServiceCard، Header، Footer  
+- **بهینه‌سازی کد**: DRY، استفاده از map به جای تکرار دستی کارت‌ها  
+- **UX ساده و روان**: CTA واضح، فرم‌ها ساده، فاصله مناسب  
+
+---
+
+## 📌 نکات مهم
+- بدون Redux، Auth واقعی یا API  
+- بدون Overengineering  
+
+
+---
+
+## 🚀 نصب و اجرا
+1. پروژه را کلون کنید:
+```bash
+git clone <repository-url>
+cd react-app
+
+
